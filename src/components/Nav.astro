@@ -278,11 +278,21 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		height: calc(var(--icon-size) + 2 * var(--icon-padding));
 	}
 
+	.astro-icon {
+		display: flex;
+		align-items: center;
+		color: blue;
+		/* OR */
+		fill: blue;
+	}
+
 	[astro-icon] {
-      color: blue;
-        /* OR */
-      fill: blue;
-   }
+		display: flex;
+		align-items: center;
+		color: blue;
+		/* OR */
+		fill: blue;
+	}
 
 	@media (min-width: 50em) {
 		nav {
