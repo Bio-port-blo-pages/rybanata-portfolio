@@ -12,16 +12,16 @@ const textLinks: { label: string; href: string }[] = [
 
 /** Icon links to social media — edit these with links to your profiles! */
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'Instagram', href: 'https://www.instagram.com/rybanata_/', icon: 'instagram-logo-fill' },
-	{ label: 'Behance', href: 'https://www.behance.net/natalisergeyeva', icon: 'behance-logo-fill' },
-	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'youtube-logo-fill' },
+	{ label: 'Instagram', href: 'https://www.instagram.com/rybanata_/', icon: 'ri:instagram-fill' },
+	{ label: 'Behance', href: 'https://www.behance.net/natalisergeyeva', icon: 'ph:behance-logo-fill' },
+	{ label: 'YouTube', href: 'https://www.youtube.com/@me/', icon: 'mingcute:youtube-fill' },
 ];
 ---
 
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+			<Icon name="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient />
 			 RybaNata
 		</a>
 		<menu-button>
