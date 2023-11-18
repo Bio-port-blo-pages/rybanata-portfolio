@@ -1,5 +1,5 @@
 ---
-import { IconAstro } from 'astro-icon';
+import { Icon } from 'astro-icon' as IconAstro;
 import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
@@ -23,7 +23,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 	<div class="menu-header">
 		<a href="/" class="site-title">
 			<IconAstro name="/favicon.svg" />
-			<Icon name="mingcute:youtube-fill" />
+			<IconAstro name="mingcute:youtube-fill" />
 			<!-- <Icon icon="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient /> -->
 			 RybaNata
 		</a>
