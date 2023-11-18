@@ -1,6 +1,7 @@
 ---
-import { Icon as IconAstro } from 'astro-icon';
-import Icon from './Icon.astro';
+/** mport { Icon as IconAstro } from 'astro-icon'; */
+/** import Icon from './Icon.astro'; */
+import { Icon } from 'astro-icon';
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
 
@@ -22,8 +23,8 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<IconAstro name="favicon" />
-			<IconAstro name="mdi:youtube" />
+			<Icon name="favicon" />
+			<Icon name="mdi:youtube" />
 			<!-- <Icon icon="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient /> -->
 			 RybaNata
 		</a>
@@ -31,7 +32,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			<template>
 				<button class="menu-button" aria-expanded="false">
 					<span class="sr-only">Menu</span>
-					<Icon icon="list" />
+					<!-- <Icon icon="list" /> -->
 				</button>
 			</template>
 		</menu-button>
@@ -67,7 +68,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					iconLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
-							<IconAstro name={icon} />
+							<Icon name={icon} />
 						</a>
 					))
 				}
@@ -103,7 +104,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 					iconLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
-							<IconAstro name={icon} />
+							<Icon name={icon} />
 						</a>
 					))
 				}
