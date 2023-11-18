@@ -12,5 +12,6 @@
   },
   "dependencies": {
     "astro": "^3.5.5"
+    "astro-icon": "^0.8.1"
   }
 }

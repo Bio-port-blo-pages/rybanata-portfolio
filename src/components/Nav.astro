@@ -1,5 +1,6 @@
 ---
-import Icon from './Icon.astro';
+import { Icon } from 'astro-icon';
+/** import Icon from './Icon.astro'; */
 import ThemeToggle from './ThemeToggle.astro';
 import type { iconPaths } from './IconPaths';
 
@@ -20,9 +21,8 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 
 <nav>
 	<div class="menu-header">
-		<a href="/" class="site-title">
-			<iconify-icon icon="mingcute:youtube-fill"></iconify-icon>
-			<Icon icon="terminal-window" color="var(--accent-regular)" size="1.6em" gradient />
+		<a href="/" class="site-title">=
+			<Icon icon="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient />
 			 RybaNata
 		</a>
 		<menu-button>
