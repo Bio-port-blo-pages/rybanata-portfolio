@@ -8,11 +8,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import CallToAction from '../components/CallToAction.astro';
 import Grid from '../components/Grid.astro';
 import Hero from '../components/Hero.astro';
-// import Icon from '../components/Icon.astro';
+import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
 
-import { Icon } from 'astro-icon';
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
 import Skills from '../components/Skills.astro';
@@ -31,22 +30,19 @@ const projects = (await getCollection('work'))
 		<div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
 				<Hero
-					title="Hello, my name is RybaNata"
+					title="Hello, my name is Jeanine White"
 					tagline="I am a Creative Developer who is currently based in Portland, Oregon."
 					align="start"
 				>
-				<Icon name="favicon" />
 					<div class="roles">
-						<Icon name="ph:address-book-fill" />
-						<Icon name="mdi:youtube" />
-						<!-- <Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
+						<Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
 						<Pill><Icon icon="microphone-stage" size="1.33em" /> Speaker</Pill>
-						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill> -->
+						<Pill><Icon icon="pencil-line" size="1.33em" /> Writer</Pill>
 					</div>
 				</Hero>
 
 				<img
-					alt="RybaNata smiling in a red plaid shirt and tortoise shell glasses"
+					alt="Jeanine White smiling in a red plaid shirt and tortoise shell glasses"
 					width="480"
 					height="620"
 					src="/assets/portrait.jpg"
@@ -78,7 +74,7 @@ const projects = (await getCollection('work'))
 				<div class="cta">
 					<CallToAction href="/work/">
 						View All
-						<!-- <Icon icon="arrow-right" size="1.2em" /> -->
+						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
 			</section>
