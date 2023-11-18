@@ -1,8 +1,10 @@
 ---
+import { getCollection } from 'astro:content';
+
 // mport { Icon as IconAstro } from 'astro-icon';
 // import Icon from './Icon.astro';
-import { Icon } from 'astro-icon';
 import ThemeToggle from './ThemeToggle.astro';
+import { Icon } from 'astro-icon';
 // import type { iconPaths } from './IconPaths';
 
 /** Main menu items */
@@ -23,7 +25,6 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon name="favicon" />
 			<Icon name="mdi:youtube" />
 			<!-- <Icon icon="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient /> -->
 			 RybaNata
@@ -65,6 +66,10 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		<div class="menu-footer">
 			<div class="socials">
 				{
+					<a href='https://www.youtube.com/@me/' class="social">
+						<span class="sr-only">labl</span>
+						<Icon name="mdi:youtube" />
+					</a>
 					iconLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
@@ -101,6 +106,10 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 		<div class="menu-footer">
 			<div class="socials">
 				{
+					<a href='https://www.youtube.com/@me/' class="social">
+						<span class="sr-only">labl</span>
+						<Icon name="mdi:youtube" />
+					</a>
 					iconLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
