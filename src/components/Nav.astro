@@ -1,6 +1,4 @@
 ---
-import { getCollection } from 'astro:content';
-
 // mport { Icon as IconAstro } from 'astro-icon';
 // import Icon from './Icon.astro';
 import ThemeToggle from './ThemeToggle.astro';
@@ -22,14 +20,14 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 ];
 ---
 
-<Icon name="mdi:youtube" />
-<a href="/" class="site-title">
-	<Icon name="mdi:youtube" />
-	<!-- <Icon icon="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient /> -->
-	 RybaNata
-</a>
 
 <nav>
+	<Icon name="mdi:youtube" />
+	<a href="/" class="site-title">
+		<Icon name="mdi:youtube" />
+		<!-- <Icon icon="/favicon.svg" color="var(--accent-regular)" size="1.6em" gradient /> -->
+		 RybaNata
+	</a>
 	<div class="menu-header">
 		<a href="/" class="site-title">
 			<Icon name="mdi:youtube" />
