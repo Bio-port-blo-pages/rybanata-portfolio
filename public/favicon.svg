@@ -5,8 +5,8 @@
         circle { fill: #076ABA; }
         path { fill: #FFF; }
         @media (prefers-color-scheme: dark) {
-            circle { fill: #076ABA; }
-            path { fill: #FFF; }
+            circle { fill: #FFF; }
+            path { fill: #076ABA; }
         }
     </style>
 </svg>
