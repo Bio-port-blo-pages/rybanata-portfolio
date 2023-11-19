@@ -1,14 +1,14 @@
 ---
 import { getCollection } from 'astro:content';
 import { Img } from 'astro-imagetools/components';
-import {Content as PageContent} from '../components/pages/illustrations.md';
+import {Content as PageContent} from '../components/pages/projects.md';
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 import { getImages } from '../helpers.js';
 
-const images = await getImages('illustrations/');
+const images = await getImages('projects/');
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
