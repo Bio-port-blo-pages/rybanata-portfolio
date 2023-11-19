@@ -33,49 +33,7 @@ const images = await getImages('public/illustrations/');
 ---
 
 <BaseLayout>
-	<div class="max-w-screen-xl px-4 md:px-8 mx-auto">
-		<div
-		  id="my-gallery"
-		  class="pswp-gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 xl:gap-8 gallery"
-		>
-			<div class="gallery">
-				<Grid variant="offset">
-					{
-						images.map((image) => (
-							<a href={image.href} 
-								data-pswp-width={image.size.width}
-								data-pswp-height={image.size.height}
-								target="_blank">
-								<img src={image.href} loading="lazy" decoding="async" />
-							</a>
-				<!-- <a
-				  href={image.href}
-				  data-cropped="true"
-				  data-pswp-width={image.size.width}
-				  data-pswp-height={image.size.height}
-				  class="group h-72 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-xl shadow-lg relative gallery-item hover:shadow-xl"
-				> -->
-				  <!-- <div class="w-full h-full flex object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200 text-transparent">
-					 <Img
-						src={image.href}
-						alt={image.label}
-						format="webp"
-						width={image.size.width / 3}
-					 />
-				  </div> -->
 
-				  <!-- <div class="bg-gradient-to-t from-black via-transparent to-transparent opacity-20 absolute inset-0 pointer-events-none group-hover:opacity-0 transition duration-200" /> -->
-
-				  <!-- <span class="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur relative px-2 md:px-3 py-1 mr-3 mb-3 group-hover:opacity-0 transition duration-200">
-					 {image.label}
-				  </span> -->
-							</a>
-						))
-					}
-				</Grid>
-			</div>
-		</div>
-	</div>
 	
 	<!-- <div class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
 		<a href="/illustration_img/at-work.jpg" 
@@ -149,6 +107,55 @@ const images = await getImages('public/illustrations/');
 					<p>Take a look below at some of my featured work for clients from the past few years.</p>
 				</header>
 
+				<!-- <div class="max-w-screen-xl px-4 md:px-8 mx-auto"> -->
+					<div
+					  id="my-gallery"
+					  class="pswp-gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 xl:gap-8 gallery"
+					>
+						<div class="gallery">
+							<Grid variant="offset">
+								{
+									images.map((image) => (
+										<li>
+											<a href={image.href} 
+												class="card" 
+												data-pswp-width={image.size.width}
+												data-pswp-height={image.size.height}
+												target="_blank">
+												<!-- <span class="title">{image.label}</span> -->
+												<img src={image.href} loading="lazy" decoding="async" />
+											</a>
+										</li>
+							<!-- <a
+							  href={image.href}
+							  data-cropped="true"
+							  data-pswp-width={image.size.width}
+							  data-pswp-height={image.size.height}
+							  class="group h-72 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-xl shadow-lg relative gallery-item hover:shadow-xl"
+							> -->
+							  <!-- <div class="w-full h-full flex object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200 text-transparent">
+								 <Img
+									src={image.href}
+									alt={image.label}
+									format="webp"
+									width={image.size.width / 3}
+								 />
+							  </div> -->
+			
+							  <!-- <div class="bg-gradient-to-t from-black via-transparent to-transparent opacity-20 absolute inset-0 pointer-events-none group-hover:opacity-0 transition duration-200" /> -->
+			
+							  <!-- <span class="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur relative px-2 md:px-3 py-1 mr-3 mb-3 group-hover:opacity-0 transition duration-200">
+								 {image.label}
+							  </span> -->
+										</a>
+									))
+								}
+							</Grid>
+						</div>
+					</div>
+				<!-- </div> -->
+
+<!-- 
 				<div class="gallery">
 					<Grid variant="offset">
 						{
@@ -160,14 +167,14 @@ const images = await getImages('public/illustrations/');
 						}
 					</Grid>
 				</div>
-
+				
 				<div class="cta">
 					<CallToAction href="/work/">
 						View All
 						<Icon icon="arrow-right" size="1.2em" />
 					</CallToAction>
 				</div>
-			</section>
+			</section> -->
 			
 		</main>
 
@@ -178,6 +185,56 @@ const images = await getImages('public/illustrations/');
 <!-- <link rel="stylesheet" href="photoswipe/dist/photoswipe.css"> -->
 
 <style>
+	.card {
+		display: grid;
+		grid-template: auto 1fr / auto 1fr;
+		/* height: 11rem; */
+		height: auto;
+		background: var(--gradient-subtle);
+		border: 1px solid var(--gray-800);
+		border-radius: 0.75rem;
+		overflow: hidden;
+		box-shadow: var(--shadow-sm);
+		text-decoration: none;
+		font-family: var(--font-brand);
+		font-size: var(--text-lg);
+		font-weight: 500;
+		transition: box-shadow var(--theme-transition);
+	}
+
+	.card:hover {
+		box-shadow: var(--shadow-md);
+	}
+
+	.title {
+		grid-area: 1 / 1 / 2 / 2;
+		z-index: 1;
+		margin: 0.5rem;
+		padding: 0.5rem 1rem;
+		background: var(--gray-999);
+		color: var(--gray-200);
+		border-radius: 0.375rem;
+	}
+
+	img {
+		grid-area: 1 / 1 / 3 / 3;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	@media (min-width: 50em) {
+		.card {
+			/* height: 22rem; */
+			height: auto;
+			border-radius: 1.5rem;
+		}
+
+		.title {
+			border-radius: 0.9375rem;
+		}
+	}
+	
 	.hero {
 		display: flex;
 		flex-direction: column;
