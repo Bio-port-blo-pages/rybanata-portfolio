@@ -13,8 +13,6 @@ const images = await getImages('public/illustrations/');
 // https://docs.astro.build/core-concepts/astro-components/
 ---
 
-<!-- <link rel="stylesheet" href="photoswipe/dist/photoswipe.css"> -->
-
 <BaseLayout>
 
 	<div class="stack gap-20 lg:gap-48">
@@ -56,6 +54,10 @@ const images = await getImages('public/illustrations/');
 		</main>
 	</div>
 </BaseLayout>
+
+<script>
+	import '../load-gallery.js';
+</script>
 
 <style>
 
