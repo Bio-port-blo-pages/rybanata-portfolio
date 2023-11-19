@@ -13,7 +13,7 @@ export async function getImages(dir) {
       const size = await probe.sync(data);
 
       // optional fix for unicode
-      href = await encodeURI(href);
+      href = await encodeURI('illustrations/' + files);
       return { label, href, size };
     }));
   } catch (err) {
