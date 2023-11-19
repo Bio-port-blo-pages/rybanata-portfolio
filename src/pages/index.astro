@@ -34,46 +34,6 @@ const images = await getImages('public/illustrations/');
 
 <BaseLayout>
 
-	
-	<!-- <div class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
-		<a href="/illustration_img/at-work.jpg" 
-		  data-pswp-width="1669" 
-		  data-pswp-height="2500" 
-		  target="_blank">
-		  <img src="/illustration_img/at-work.jpg" alt="" />
-		</a>=
-		<a href="/illustration_img/6kot.gif" 
-		  data-pswp-width="1875" 
-		  data-pswp-height="2500" 
-		  data-cropped="true" 
-		  target="_blank">
-		  <img src="/illustration_img/6kot.gif" alt="" />
-		  Cropped
-		</a>
-		<a href="https://unsplash.com" 
-		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
-		  data-pswp-width="2500" 
-		  data-pswp-height="1666" 
-		  target="_blank">
-		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
-		</a>
-		<a href="http://example.com" 
-		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
-		  data-pswp-width="2500" 
-		  data-pswp-height="1668" 
-		  target="_blank">
-		  No thumbnail
-		</a>
-		<div>
-		  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
-			 data-pswp-width="2500" 
-			 data-pswp-height="1667" 
-			 target="_blank">
-			 <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
-		  </a>
-		</div>
-	 </div> -->
-
 	<div class="stack gap-20 lg:gap-48">
 		<!-- <div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
@@ -112,11 +72,14 @@ const images = await getImages('public/illustrations/');
 					  id="my-gallery"
 					  class="pswp-gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 xl:gap-8 gallery"
 					>
-						<div class="gallery">
-							<Grid variant="offset">
+						<div class="grid" data-masonry='{ "itemSelector": ".grid-item"}'>
+						
+						<!-- <div class="gallery"> -->
+							<!-- <Grid variant="offset"> -->
 								{
 									images.map((image) => (
-										<li>
+										<!-- <li> -->
+										<div class="grid-item">
 											<a href={image.href} 
 												class="card" 
 												data-pswp-width={image.size.width}
@@ -126,7 +89,8 @@ const images = await getImages('public/illustrations/');
 												<!-- <img src={image.href} loading="lazy" decoding="async" /> -->
 												<img src={image.href} loading="lazy" />
 											</a>
-										</li>
+										</div>
+										<!-- </li> -->
 							<!-- <a
 							  href={image.href}
 							  data-cropped="true"
@@ -151,7 +115,8 @@ const images = await getImages('public/illustrations/');
 										</a>
 									))
 								}
-							</Grid>
+							<!-- </Grid> -->
+						<!-- </div> -->
 						</div>
 					</div>
 				<!-- </div> -->
@@ -183,24 +148,38 @@ const images = await getImages('public/illustrations/');
 	</div>
 </BaseLayout>
 
+<script src="../../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
 <!-- <link rel="stylesheet" href="photoswipe/dist/photoswipe.css"> -->
 
 <style>
+
+
+	.grid-item {
+		width: 97%;
+		margin-left: 1.5%;
+		margin-right: 1.5%;
+		margin-bottom: 3%;
+	}
+
 	.card {
 		display: grid;
 		grid-template: auto 1fr / auto 1fr;
-		height: 11rem;
-		/* height: auto; */
+		/* height: 11rem; */
+		height: auto;
+		/* width: 10rem; */
 		background: var(--gradient-subtle);
-		border: 1px solid var(--gray-800);
-		border-radius: 0.75rem;
 		overflow: hidden;
-		box-shadow: var(--shadow-sm);
 		text-decoration: none;
 		font-family: var(--font-brand);
 		font-size: var(--text-lg);
 		font-weight: 500;
 		transition: box-shadow var(--theme-transition);
+
+		/* Optional: */
+		/* border: 1px solid var(--gray-800); */
+		/* border-radius: 0.75rem; */
+		box-shadow: var(--shadow-sm);
+
 	}
 
 	.card:hover {
@@ -225,10 +204,18 @@ const images = await getImages('public/illustrations/');
 	}
 
 	@media (min-width: 50em) {
+		.grid-item {
+			width: 45%;
+			margin-left: 1.5%;
+			margin-right: 1.5%;
+			margin-bottom: 3%;
+		}
+
 		.card {
-			height: 22rem;
+			/* height: 22rem; */
 			height: auto;
-			border-radius: 1.5rem;
+			/* Optional: */
+			/* border-radius: 1.5rem; */
 		}
 
 		.title {
@@ -257,8 +244,8 @@ const images = await getImages('public/illustrations/');
 
 	@media (min-width: 50em) {
 		.hero {
-			display: grid;
-			grid-template-columns: 6fr 4fr;
+			/* display: grid; */
+			/* grid-template-columns: 6fr 4fr; */
 			padding-inline: 2.5rem;
 			gap: 3.75rem;
 		}
@@ -279,7 +266,7 @@ const images = await getImages('public/illustrations/');
 	/* ====================================================== */
 
 	.section {
-		display: grid;
+		/* display: grid; */
 		gap: 2rem;
 	}
 
@@ -325,17 +312,17 @@ const images = await getImages('public/illustrations/');
 
 	@media (min-width: 50em) {
 		.section {
-			grid-template-columns: repeat(4, 1fr);
-			grid-template-areas: 'header header header header' 'gallery gallery gallery gallery';
+			/* grid-template-columns: repeat(4, 1fr); */
+			/* grid-template-areas: 'header header header header' 'gallery gallery gallery gallery'; */
 			gap: 5rem;
 		}
 
 		.section.with-cta {
-			grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery';
+			/* grid-template-areas: 'header header header cta' 'gallery gallery gallery gallery'; */
 		}
 
 		.section-header {
-			grid-area: header;
+			/* grid-area: header; */
 			font-size: var(--text-lg);
 		}
 
@@ -349,11 +336,11 @@ const images = await getImages('public/illustrations/');
 		}
 
 		.gallery {
-			grid-area: gallery;
+			/* grid-area: gallery; */
 		}
 
 		.cta {
-			grid-area: cta;
+			/* grid-area: cta; */
 		}
 	}
 
