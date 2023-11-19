@@ -2,23 +2,24 @@
 // import Icon from './Icon.astro';
 import { Icon } from 'astro-icon';
 import ThemeToggle from './ThemeToggle.astro';
-import type { iconPaths } from './IconPaths';
 
 /** Main menu items */
 const textLinks: { label: string; href: string }[] = [
-	{ label: 'Art', href: '/' },
-	{ label: 'Design', href: '/work/' },
-	{ label: 'O mnie', href: '/about/' },
+	{ label: 'ilustracja', href: '/' },
+	{ label: 'projekty', href: '/work/' },
+	{ label: 'o mnie', href: '/about/' },
 ];
 
 /** Icon links to social media — edit these with links to your profiles! */
+
 const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'Instagram', href: 'mailto:contact.rybanata.art',             icon: 'ic:round-email' },
+	{ label: 'Email',     href: 'mailto:contact.rybanata.art@gmail.com',   icon: 'ic:round-email' },
 	{ label: 'Instagram', href: 'https://www.instagram.com/rybanata_',     icon: 'ri:instagram-fill' },
 	{ label: 'Behance',   href: 'https://www.behance.net/natalisergeyeva', icon: 'ri:behance-fill' },
 	{ label: 'Pinterest', href: 'https://pl.pinterest.com/rybanata/',      icon: 'ri:pinterest-fill' },
 	{ label: 'YouTube',   href: 'https://www.youtube.com/@rybanata',       icon: 'ri:youtube-fill' },
 ];
+
 ---
 
 <nav>
@@ -32,7 +33,7 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 			<template>
 				<button class="menu-button" aria-expanded="false">
 					<span class="sr-only">Menu</span>
-					<!-- <Icon icon="list" /> -->
+					<Icon name="typcn:th-menu" size="1.2em" />
 				</button>
 			</template>
 		</menu-button>

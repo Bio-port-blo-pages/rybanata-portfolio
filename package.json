@@ -11,7 +11,11 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@types/probe-image-size": "^7.2.0",
     "astro": "^3.5.5",
-    "astro-icon": "^0.8.1"
+    "astro-icon": "^0.8.1",
+    "astro-imagetools": "^0.8.1",
+    "photoswipe": "^5.4.2",
+    "probe-image-size": "^7.2.3"
   }
 }

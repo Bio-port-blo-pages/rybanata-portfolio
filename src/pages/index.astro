@@ -1,5 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
+import { Img } from 'astro-imagetools/components';
 
 // Layout import — provides basic page elements: <head>, <nav>, <footer> etc.
 import BaseLayout from '../layouts/BaseLayout.astro';
@@ -11,6 +12,7 @@ import Hero from '../components/Hero.astro';
 import Icon from '../components/Icon.astro';
 import Pill from '../components/Pill.astro';
 import PortfolioPreview from '../components/PortfolioPreview.astro';
+import { getImages } from '../helpers.js';
 
 // Page section components
 import ContactCTA from '../components/ContactCTA.astro';
@@ -21,11 +23,99 @@ const projects = (await getCollection('work'))
 	.sort((a, b) => b.data.publishDate.valueOf() - a.data.publishDate.valueOf())
 	.slice(0, 4);
 
+const images = await getImages('public/illustrations/');
+console.log(images);
+
+
 // Full Astro Component Syntax:
 // https://docs.astro.build/core-concepts/astro-components/
+
 ---
 
 <BaseLayout>
+	<div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+		<div
+		  id="my-gallery"
+		  class="pswp-gallery grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 xl:gap-8 gallery"
+		>
+			<div class="gallery">
+				<Grid variant="offset">
+					{
+						images.map((image) => (
+							<a href={image.href} 
+								data-pswp-width={image.size.width}
+								data-pswp-height={image.size.height}
+								target="_blank">
+								<img src={image.href} loading="lazy" decoding="async" />
+							</a>
+				<!-- <a
+				  href={image.href}
+				  data-cropped="true"
+				  data-pswp-width={image.size.width}
+				  data-pswp-height={image.size.height}
+				  class="group h-72 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-xl shadow-lg relative gallery-item hover:shadow-xl"
+				> -->
+				  <!-- <div class="w-full h-full flex object-cover object-center absolute inset-0 group-hover:scale-110 transition duration-200 text-transparent">
+					 <Img
+						src={image.href}
+						alt={image.label}
+						format="webp"
+						width={image.size.width / 3}
+					 />
+				  </div> -->
+
+				  <!-- <div class="bg-gradient-to-t from-black via-transparent to-transparent opacity-20 absolute inset-0 pointer-events-none group-hover:opacity-0 transition duration-200" /> -->
+
+				  <!-- <span class="inline-block text-gray-200 text-xs md:text-sm border border-gray-500 rounded-lg backdrop-blur relative px-2 md:px-3 py-1 mr-3 mb-3 group-hover:opacity-0 transition duration-200">
+					 {image.label}
+				  </span> -->
+							</a>
+						))
+					}
+				</Grid>
+			</div>
+		</div>
+	</div>
+	
+	<!-- <div class="pswp-gallery pswp-gallery--single-column" id="my-gallery">
+		<a href="/illustration_img/at-work.jpg" 
+		  data-pswp-width="1669" 
+		  data-pswp-height="2500" 
+		  target="_blank">
+		  <img src="/illustration_img/at-work.jpg" alt="" />
+		</a>=
+		<a href="/illustration_img/6kot.gif" 
+		  data-pswp-width="1875" 
+		  data-pswp-height="2500" 
+		  data-cropped="true" 
+		  target="_blank">
+		  <img src="/illustration_img/6kot.gif" alt="" />
+		  Cropped
+		</a>
+		<a href="https://unsplash.com" 
+		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+		  data-pswp-width="2500" 
+		  data-pswp-height="1666" 
+		  target="_blank">
+		  <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg" alt="" />
+		</a>
+		<a href="http://example.com" 
+		  data-pswp-src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/5/img-2500.jpg"
+		  data-pswp-width="2500" 
+		  data-pswp-height="1668" 
+		  target="_blank">
+		  No thumbnail
+		</a>
+		<div>
+		  <a href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-2500.jpg"
+			 data-pswp-width="2500" 
+			 data-pswp-height="1667" 
+			 target="_blank">
+			 <img src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/6/img-200.jpg" alt="" />
+		  </a>
+		</div>
+	 </div> -->
+
 	<div class="stack gap-20 lg:gap-48">
 		<!-- <div class="wrapper stack gap-8 lg:gap-20">
 			<header class="hero">
@@ -84,6 +174,8 @@ const projects = (await getCollection('work'))
 		<ContactCTA />
 	</div>
 </BaseLayout>
+
+<!-- <link rel="stylesheet" href="photoswipe/dist/photoswipe.css"> -->
 
 <style>
 	.hero {

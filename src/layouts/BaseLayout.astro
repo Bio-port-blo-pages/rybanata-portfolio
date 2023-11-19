@@ -31,9 +31,13 @@ const { title, description } = Astro.props;
 			addEventListener('load', () => document.documentElement.classList.add('loaded'));
 		</script>
 
+		<script>
+			import '../load-gallery.js';
+		</script>
+	
 		<style>
 			:root {
-				--_placeholder-bg: linear-gradient(transparent, transparent);
+				--_placeholder-bg: linear-gradient(--gray-0, --gray-100);
 				--bg-image-main: none;
 				--bg-image-main-curves: none;
 				--bg-image-subtle-1: var(--_placeholder-bg);
@@ -59,7 +63,7 @@ const { title, description } = Astro.props;
 			:root.loaded {
 				--bg-image-subtle-1: none;
 				--bg-image-subtle-2: none;
-				--bg-image-footer: url('/assets/bg-art/bg.jpg');
+				--bg-image-footer: none;
 			}
 			/* :root.loaded.theme-dark {
 				--bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-800w.jpg');
@@ -79,7 +83,7 @@ const { title, description } = Astro.props;
 				:root.loaded {
 					--bg-image-subtle-1: none;
 					--bg-image-subtle-2: none;
-					--bg-image-footer: url('/assets/bg-art/bg.jpg');
+					--bg-image-footer: none;
 				}
 				/* :root.loaded.theme-dark {
 					--bg-image-subtle-1: url('/assets/backgrounds/bg-subtle-1-dark-1440w.jpg');
