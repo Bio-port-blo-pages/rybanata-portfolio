@@ -25,7 +25,7 @@ const images = await getImages(gallery_dir);
 			<div class="grid" data-masonry='{ "percentPosition": true, "itemSelector": ".grid-item"}'>
 				{
 					images.map((image) => (
-						<div class="grid-item">
+						<div class="grid-item" style="height:{image.size.height};" >
 							<a href={image.href} 
 								class="card group h-72 md:h-96 flex justify-end items-end bg-gray-100 overflow-hidden rounded-xl shadow-lg relative gallery-item hover:shadow-xl" 
 								data-pswp-width={image.size.width}
