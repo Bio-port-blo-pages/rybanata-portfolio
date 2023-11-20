@@ -9,6 +9,5 @@ tags:
   - Design
 ---
 
-# Projekty
+# Projekty graficzne
 
-Moje pracy projektowe: 
