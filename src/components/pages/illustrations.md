@@ -9,6 +9,5 @@ tags:
   - Design
 ---
 
-### Ilustracja
+### Ilustracja 
 
-Moje pracy akwarelą: 
