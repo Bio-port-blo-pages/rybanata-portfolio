@@ -2,12 +2,6 @@
 import { Icon } from 'astro-icon';
 import ThemeToggle from './ThemeToggle.astro';
 
-/** Main menu items */
-const textLinks: { label: string; href: string }[] = [
-	{ label: 'ilustracja', href: '/' },
-	{ label: 'projekty', href: '/projects/' },
-	{ label: 'o mnie', href: '/about/' },
-];
 
 /** Icon links to social media — edit these with links to your profiles! */
 
@@ -17,6 +11,18 @@ const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[]
 	{ label: 'Behance',   href: 'https://www.behance.net/natalisergeyeva', icon: 'ri:behance-fill' },
 	{ label: 'Pinterest', href: 'https://pl.pinterest.com/rybanata/',      icon: 'ri:pinterest-fill' },
 	{ label: 'YouTube',   href: 'https://www.youtube.com/@rybanata',       icon: 'ri:youtube-fill' },
+];
+
+
+import {frontmatter as illustrationsPageSettings} from '../components/pages/illustrations.md';
+import {frontmatter as projectsPageSettings} from '../components/pages/projects.md';
+import {frontmatter as aboutPageSettings} from '../components/pages/about.md';
+
+/** Main menu items */
+const textLinks: { label: string; href: string }[] = [
+	{ label: illustrationsPageSettings.label, href: '/' },
+	{ label: projectsPageSettings.label, href: '/projects/' },
+	{ label: aboutPageSettings.label, href: '/about/' },
 ];
 
 ---

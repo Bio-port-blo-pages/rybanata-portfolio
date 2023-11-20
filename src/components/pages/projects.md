@@ -1,6 +1,7 @@
 ---
 destination: 'projects'
-title: projekty
+label: 'projekty'
+title: 'Projekty'
 description: 'Pracy projektowe'
 gallery_dir: 'projects/'
 tags:

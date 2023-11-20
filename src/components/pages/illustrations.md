@@ -1,6 +1,7 @@
 ---
 destination: 'index'
-title: ilustracja
+label: 'ilustracja'
+title: 'Ilustracja'
 description: 'Pracy akwarelą'
 gallery_dir: 'illustrations/'
 tags:

@@ -1,7 +1,8 @@
 ---
 destination: 'about'
-title: o mnie
-description: 'Pracy projektowe'
+label: 'o mnie'
+title: 'O mnie'
+description: 'Opis portfolio'
 gallery_dir: none
 tags:
   - Opis
