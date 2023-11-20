@@ -13,8 +13,7 @@ tags:
 
 Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania. 
 Na co dzień zajmuję się tworzeniem własnych projektów oraz wykonywaniem różnych ciekawych zleceń. Pracuję cyfrowo i ręcznie.
-W Portfolio przezentuję tylko niektóre pomysły i projekty. Jest to jedynie namiastka moich umiejętności bo ciągłe się uczę i nie boję eksperymentować :-)
-
+W portfolio przezentuję tylko niektóre pomysły i projekty. Jest to jedynie namiastka moich umiejętności bo ciągłe się uczę i nie boję eksperymentować :-)
 Jeśli jesteś zainteresowany współpracą, zapraszam do kontaktu.
 
 
