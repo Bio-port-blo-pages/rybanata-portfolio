@@ -9,7 +9,7 @@ tags:
   - Design
 ---
 
-#### O mnie
+#### o mnie
 
 Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania. 
 Na co dzień zajmuję się tworzeniem własnych projektów oraz wykonywaniem różnych ciekawych zleceń. Pracuję cyfrowo i ręcznie.
