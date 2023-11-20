@@ -2,29 +2,8 @@
 import { Icon } from 'astro-icon';
 import ThemeToggle from './ThemeToggle.astro';
 
-
-/** Icon links to social media — edit these with links to your profiles! */
-
-const iconLinks: { label: string; href: string; icon: keyof typeof iconPaths }[] = [
-	{ label: 'Email',     href: 'mailto:contact.rybanata.art@gmail.com',   icon: 'ic:round-email' },
-	{ label: 'Instagram', href: 'https://www.instagram.com/rybanata_',     icon: 'ri:instagram-fill' },
-	{ label: 'Behance',   href: 'https://www.behance.net/natalisergeyeva', icon: 'ri:behance-fill' },
-	{ label: 'Pinterest', href: 'https://pl.pinterest.com/rybanata/',      icon: 'ri:pinterest-fill' },
-	{ label: 'YouTube',   href: 'https://www.youtube.com/@rybanata',       icon: 'ri:youtube-fill' },
-];
-
-
-import {frontmatter as illustrationsPageSettings} from '../components/pages/illustrations.md';
-import {frontmatter as projectsPageSettings} from '../components/pages/projects.md';
-import {frontmatter as aboutPageSettings} from '../components/pages/about.md';
-
-/** Main menu items */
-const textLinks: { label: string; href: string }[] = [
-	{ label: illustrationsPageSettings.label, href: '/' },
-	{ label: projectsPageSettings.label, href: '/projects/' },
-	{ label: aboutPageSettings.label, href: '/about/' },
-];
-
+/** Main menu items; Icons/links to social media */
+import { navigationLinks, socialLinks } from '../links.ts';
 ---
 
 <nav>
@@ -45,7 +24,7 @@ const textLinks: { label: string; href: string }[] = [
 	<noscript>
 		<ul class="nav-items">
 			{
-				textLinks.map(({ label, href }) => (
+				navigationLinks.map(({ label, href }) => (
 					<li>
 						<a
 							aria-current={Astro.url.pathname === href}
@@ -70,7 +49,7 @@ const textLinks: { label: string; href: string }[] = [
 		<div class="menu-footer">
 			<div class="socials">
 				{
-					iconLinks.map(({ href, icon, label }) => (
+					socialLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
 							<Icon name={icon} size="1.2em" class="social" />
@@ -83,7 +62,7 @@ const textLinks: { label: string; href: string }[] = [
 	<div id="menu-content" hidden>
 		<ul class="nav-items">
 			{
-				textLinks.map(({ label, href }) => (
+				navigationLinks.map(({ label, href }) => (
 					<li>
 						<a
 							aria-current={Astro.url.pathname === href}
@@ -106,10 +85,10 @@ const textLinks: { label: string; href: string }[] = [
 		<div class="menu-footer">
 			<div class="socials">
 				{
-					iconLinks.map(({ href, icon, label }) => (
+					socialLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
-							<Icon name={icon} size="1.2em" class="social" />
+							<Icon name={icon} size="1.1em" class="social" />
 						</a>
 					))
 				}
@@ -269,7 +248,7 @@ const textLinks: { label: string; href: string }[] = [
 	.socials {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.625rem;
+		gap: 0.125rem;
 		font-size: 2.2em;
 		/* font-size: var(--icon-size); */
 	}
