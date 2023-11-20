@@ -9,8 +9,11 @@ import { navigationLinks, socialLinks } from '../links.ts';
 <nav>
 	<div class="menu-header">
 		<a href="/" class="site-title">
-			<Icon name="logo" color="var(--accent-regular)" size="3em" />
-			 RybaNata.Art
+			<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="3.5em" height="3.5em" version="1.1" viewBox="0 0 19303.62 19303.62">
+				<path d="M3810.62 5992.16c-2633.26,2396.84 -832.07,5526.3 1830.7,6720.88 188.03,84.35 696.52,240.21 1417.97,347.76 -10.92,1494.29 -108.74,1721.25 486.17,1800.53 515.73,-107.4 714.59,-475.78 655.26,-1693.59 193.94,7.79 395.47,10.78 603.61,7.62 453.23,1336.37 771.47,1804.25 1685.34,1804.25 820.73,0 1313.94,-579.42 1376.06,-2333.78 1882.55,-622.79 3011.88,-1999.79 3773.97,-3843.38 298.97,290.65 2182.73,1957.21 2220.45,879.56 37.53,-809.81 -338.63,-2473.31 -783.72,-3144.81 -564.6,-738.81 -1107.85,-86.42 -1297.06,560.02 -97.76,313.39 -198.89,599.08 -311.48,869.73 -3410.8,-2164.33 -8842.57,-4306.94 -11657.27,-1974.79zm1601.55 1193.33c668.92,0 1211.19,544.94 1211.19,1217.12 0,672.23 -542.27,1217.15 -1211.19,1217.15 -668.98,0 -1211.24,-544.91 -1211.24,-1217.15 0,-672.18 542.26,-1217.12 1211.24,-1217.12z"/>
+			</svg>
+			<!-- <img src="/logo.svg" width="60em" /> -->
+			RybaNata.Art
 		</a>
 		<menu-button>
 			<template>
@@ -160,6 +163,16 @@ import { navigationLinks, socialLinks } from '../links.ts';
 		justify-content: space-between;
 		gap: 0.5rem;
 		padding: 1.5rem;
+	}
+
+	.menu-header svg {
+		fill: var(--accent-regular);
+		transition: fill var(--theme-transition);
+	}
+
+	.menu-header:hover svg,
+	.menu-header:focus svg{
+		fill: var(--accent-dark-extra);
 	}
 
 	.site-title {
