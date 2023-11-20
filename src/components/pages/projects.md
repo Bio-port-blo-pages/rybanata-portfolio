@@ -9,5 +9,5 @@ tags:
   - Design
 ---
 
-#### Projekty graficzne
+#### projekty graficzne
 
