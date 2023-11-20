@@ -1,16 +1,18 @@
 ---
+import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+import {frontmatter as PageSettings, Content as PageContent} from '../components/pages/404.md';
 ---
 
-<BaseLayout title="Not Found" description="404 Error — this page was not found">
-	<div class="stack gap-20">
-		<main class="wrapper about">
-			<div class="stack gap-4">
-				<div class="stack gap-2">
-					<h1 class="title">404 page not found</h1>
-				</div>
-			</div>
+<BaseLayout id="base-layout" title={PageSettings.title + " | RybaNata"} description={PageSettings.description} >
+
+	<div class="stack gap-20 lg:gap-48">
+
+		<main class="wrapper stack gap-20 lg:gap-48">
+			<section class="section with-background with-cta">
+				<PageContent />
+			</section>
 		</main>
 	</div>
-
 </BaseLayout>

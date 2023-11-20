@@ -1,8 +1,5 @@
 ---
 import { getCollection } from 'astro:content';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import Gallery from '../layouts/Gallery.astro';
-
 import {frontmatter as PageSettings, Content as PageContent} from '../components/pages/illustrations.md';
 ---
 
@@ -18,7 +15,6 @@ import {frontmatter as PageSettings, Content as PageContent} from '../components
 				<br><br>
 				
 				<Gallery gallery_dir={PageSettings.gallery_dir} />		
-			</section>
 		</main>
 	</div>
 </BaseLayout>
