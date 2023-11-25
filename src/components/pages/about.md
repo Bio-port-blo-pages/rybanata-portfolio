@@ -11,7 +11,7 @@ tags:
 
 #### o mnie
 
-<div>
+<div style="display: flex; align-items: center; justify-content: center;">
     <div style="float: left">
         <img src="/Портрет_.jpg" alt="photo" width="30%">
     </div>
