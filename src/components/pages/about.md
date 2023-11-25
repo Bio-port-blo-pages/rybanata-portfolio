@@ -21,4 +21,4 @@ Jeśli jesteś zainteresowany współpracą, zapraszam do kontaktu.
 
 
 
-![_](/Портрет_. jpg)
+![_](/Портрет_.jpg)
