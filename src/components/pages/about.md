@@ -13,7 +13,7 @@ tags:
 
 <div>
     <div style="float: left">
-        <img src="/Портрет_.jpg" alt="photo" width="30em">
+        <img src="/Портрет_.jpg" alt="photo" width="30%">
     </div>
     <div>
         <span>
