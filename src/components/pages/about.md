@@ -11,11 +11,11 @@ tags:
 
 #### o mnie
 
-<div style="display: flex; align-items: center; justify-content: center;">
+<div style="display: flex;">
     <div style="float: left">
         <img src="/Портрет_.jpg" alt="photo" max-width="30%">
     </div>
-    <div style="float: left">
+    <div>
         Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania. 
         Na co dzień zajmuję się tworzeniem własnych projektów oraz wykonywaniem różnych ciekawych zleceń. Pracuję cyfrowo i ręcznie.
         W portfolio przezentuję tylko niektóre pomysły i projekty. Jest to jedynie namiastka moich umiejętności bo ciągłe się uczę i nie boję eksperymentować :-)
