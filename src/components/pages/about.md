@@ -32,4 +32,4 @@ Jeśli jesteś zainteresowany współpracą, zapraszam do kontaktu.
 
 Tak:
 
-![tekst alternatywny](/illustrations/1.jpg)
+!(/Портрет_/1.jpg)
