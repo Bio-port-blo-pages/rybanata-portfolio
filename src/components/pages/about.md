@@ -13,7 +13,7 @@ tags:
 
 <div style="display: flex; align-items: center; justify-content: center;">
     <div style="float: left">
-        <img src="/Портрет_.jpg" alt="photo" width="30%">
+        <img src="/Портрет_.jpg" alt="photo" max-width="30%">
     </div>
     <div style="float: left">
         Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania. 
