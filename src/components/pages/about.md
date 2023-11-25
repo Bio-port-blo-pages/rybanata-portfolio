@@ -15,8 +15,7 @@ tags:
     <div>
         <img src="/Портрет_.jpg" alt="photo" style="float: left; margin-right: 2.5%; width: 30%; @media (min-width: 50em) { width: 100%; }">
     </div>
-    <p style="white-space: pre-wrap; text-align: justify;">
-      Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania.  
+    <p style="white-space: pre-wrap; text-align: justify;">  Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania.  
 Na co dzień zajmuję się tworzeniem własnych projektów oraz wykonywaniem różnych ciekawych zleceń. Pracuję cyfrowo i ręcznie.  
 W portfolio przezentuję tylko niektóre pomysły i projekty. Jest to jedynie namiastka moich umiejętności bo ciągłe się uczę i nie boję eksperymentować :-)
     </p>
