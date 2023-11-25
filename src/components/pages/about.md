@@ -12,7 +12,7 @@ tags:
 #### o mnie
 
 <div style="display: flex;">
-    <div style="float: left; width: 30%;">
+    <div style="float: left; width: 100%; @media (min-width: 50em) { width: 30%; }">
         <img src="/Портрет_.jpg" alt="photo">
     </div>
     <div style="padding-left: 2.5%; white-space: pre-wrap;">Nazywam się Nataliia Sergeyeva. Jestem graficzką z zawodu i ilustratorką z zamiłowania.  
