@@ -17,19 +17,8 @@ W portfolio przezentuję tylko niektóre pomysły i projekty. Jest to jedynie na
 Jeśli jesteś zainteresowany współpracą, zapraszam do kontaktu.
 
 
-# A można mniejszy nagłówek?
-## Można
 
-# A jeszcze mniejszy? 
-#### Jak najbardziej
-
-# A Jak zrobić listę?
-
-- bardzo
-- łatwo 
-
-# A jak wstawić zdjęcie?
 
 Tak:
 
-![](/Портрет_/.jpg)
+![](/Портрет_. jpg/)
