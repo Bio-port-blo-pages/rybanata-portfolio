@@ -25,9 +25,9 @@ W portfolio przezentuję tylko niektóre pomysły i projekty. Jest to jedynie na
   img {
     float: left;
     margin-right: 2.5%;
-    width: 30%;
+    width: 100%;
     @media (min-width: 50em) {
-      width: 100%;
+      width: 30%;
     }
   }
 </style>
