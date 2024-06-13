@@ -13,5 +13,5 @@ export const socialLinks: { label: string; href: string; icon: keyof typeof icon
 	{ label: 'Instagram', href: 'https://www.instagram.com/rybanata_',     icon: 'ri:instagram-fill' },
 	{ label: 'Behance',   href: 'https://www.behance.net/natalisergeyeva', icon: 'ri:behance-fill' },
 	{ label: 'Pinterest', href: 'https://pl.pinterest.com/rybanata/',      icon: 'ri:pinterest-fill' },
-	{ label: 'YouTube',   href: 'https://www.youtube.com/@rybanata',       icon: 'ri:youtube-fill' },
+	{ label: 'YouTube',   href: 'https://www.youtube.com/@easy-coloring-for-free',       icon: 'ri:youtube-fill' },
 ];
