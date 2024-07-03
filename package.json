@@ -16,6 +16,6 @@
     "astro-icon": "^1.1.0",
     "astro-imagetools": "^0.9.0",
     "photoswipe": "^5.4.4",
-    "probe-image-size": "^7.2.4"
+    "probe-image-size": "^7.2.3"
   }
 }
