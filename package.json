@@ -13,7 +13,7 @@
   "dependencies": {
     "@types/probe-image-size": "^7.2.0",
     "astro": "^4.11.4",
-    "astro-icon": "^1.1.0",
+    "astro-icon": "^0.8.1",
     "astro-imagetools": "^0.9.0",
     "photoswipe": "^5.4.4",
     "probe-image-size": "^7.2.3"
