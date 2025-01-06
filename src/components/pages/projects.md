@@ -1,13 +1,15 @@
 ---
 destination: 'projects'
-label: 'projekty'
-title: 'Projekty'
-description: 'Pracy projektowe'
+label: 'Projects'
+title: 'Projects'
+description: 'Projects'
 gallery_dir: 'projects/'
 tags:
   - Projekty
   - Design
+  - projects
+  - vector designs
 ---
 
-#### projekty graficzne
+#### projects
 
