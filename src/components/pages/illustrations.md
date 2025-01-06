@@ -7,7 +7,9 @@ gallery_dir: 'illustrations/'
 tags:
   - Ilustracja
   - Design
----
+  - Illustrations
+  - Watercolor works
+
 
 #### illustrations 
 
