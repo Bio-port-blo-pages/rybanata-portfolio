@@ -2,7 +2,7 @@
 destination: 'projects'
 label: 'Projects'
 title: 'Projects'
-description: 'Projects'
+description: 'projects'
 gallery_dir: 'projects/'
 tags:
   - Projekty
