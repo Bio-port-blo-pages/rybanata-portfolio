@@ -1,14 +1,14 @@
 ---
 destination: 'projects'
-label: 'Projects'
-title: 'Projects'
+label: 'projects'
+title: 'projects'
 description: 'projects'
 gallery_dir: 'projects/'
 tags:
   - Projekty
   - Design
-  - projects
-  - vector designs
+  - Projects
+  - Vector designs
 ---
 
 #### projects
