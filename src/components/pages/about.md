@@ -1,7 +1,7 @@
 ---
 destination: 'about'
-label: 'about me'
-title: 'about me'
+label: 'about '
+title: 'about '
 description: 'Opis portfolio'
 gallery_dir: none
 tags:
