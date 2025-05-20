@@ -1,7 +1,7 @@
 ---
-destination: 'about'
-label: 'about '
-title: 'about '
+destination: 'about me'
+label: 'about me'
+title: 'about me '
 description: 'Opis portfolio'
 gallery_dir: none
 tags:
@@ -9,7 +9,7 @@ tags:
   - Design
 ---
 
-#### about 
+#### about me
 
 <div>
     <div>
