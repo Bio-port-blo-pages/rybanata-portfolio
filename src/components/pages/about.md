@@ -19,7 +19,7 @@ tags:
 </p>
 
 <p style="white-space: pre-wrap; text-align: justify;">
-Cześć! Nazywam się Natalia. Jestem zawodową graficzką i pasjonatką ilustracji. Na co dzień tworzę zarówno własne projekty, jak i realizuję różnorodne, interesujące zlecenia. Pracuję cyfrowo i ręcznie, łącząc różne techniki, aby uzyskać jak najlepsze efekty. W moim portfolio znajdują się tylko wybrane pomysły i projekty – to jedynie namiastka moich umiejętności, ponieważ nieustannie się rozwijam i nie boję się eksperymentować  :-)
+Cześć! Nazywam się Natalia. Jestem zawodową graficzką i pasjonatką ilustracji. Na co dzień tworzę zarówno własne projekty, jak i realizuję różnorodne, interesujące zlecenia. Pracuję cyfrowo i ręcznie, łącząc różne techniki, aby uzyskać jak najlepsze efekty. W moim portfolio znajdują się tylko wybrane pomysły i projekty – to jedynie namiastka moich umiejętności, ponieważ nieustannie się rozwijam i nie boję się eksperymentować :-)
     </p>
 </div>
 
