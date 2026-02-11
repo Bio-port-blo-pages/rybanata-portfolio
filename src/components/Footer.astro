@@ -2,7 +2,7 @@
 import { icon } from 'astro-icon';
 const currentYear = new Date().getFullYear();
 
-/** Icons/links to social media */
+/** icons/links to social media */
 import { socialLinks } from '../links.ts';
 ---
 
@@ -10,7 +10,7 @@ import { socialLinks } from '../links.ts';
 	<div class="group">
 		<p>
 			<!-- Designed & Developed in Portland with <a href="https://astro.build/">Astro</a> -->
-			<!-- <Icon icon="rocket-launch" size="1.2em" /> -->
+			<!-- <icon icon="rocket-launch" size="1.2em" /> -->
 		</p>
 		<p>&copy; {currentYear} RybaNata</p>
 	</div>
@@ -18,7 +18,7 @@ import { socialLinks } from '../links.ts';
 		{
 			socialLinks.map(({ href, icon, label }) => (
 				<a href={href}>
-					<Icon name={icon} size="1em" />
+					<icon name={icon} size="1em" />
 					{label}
 				</a>
 			))
