@@ -7,5 +7,13 @@ export default defineConfig({
 	// base: '/rybanata-portfolio',
 	site: 'https://bio-port-blo-pages.github.io/rybanata-portfolio',
 	base: '/rybanata-portfolio',
-	integrations: [icon()],
+	integrations: [icon({
+		include: {
+			ic: ['round-email'],
+			ri: ['instagram-fill', 'behance-fill', 'pinterest-fill', 'youtube-fill'],
+			ph: ['sun-bold', 'moon-stars-bold'],
+			'line-md': ['email-opened'],
+			typcn: ['th-menu'],
+		},
+	})],
 });
