@@ -9,11 +9,11 @@ export default defineConfig({
 	base: '/rybanata-portfolio',
 	integrations: [icon({
 		include: {
-			ic: ['round-email'],
-			ri: ['instagram-fill', 'behance-fill', 'pinterest-fill', 'youtube-fill'],
-			ph: ['sun-bold', 'moon-stars-bold'],
-			'line-md': ['email-opened'],
-			typcn: ['th-menu'],
+			ic: ['*'],
+			ri: ['*'],
+			ph: ['*'],
+			'line-md': ['*'],
+			typcn: ['*'],
 		},
 	})],
 });
