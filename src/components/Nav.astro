@@ -1,5 +1,5 @@
 ---
-import icon from 'astro-icon';
+import { Icon } from 'astro-icon/components';
 import ThemeToggle from './ThemeToggle.astro';
 
 /** Main menu items; icons/links to social media */
@@ -19,7 +19,7 @@ import { navigationLinks, socialLinks } from '../links.ts';
 			<template>
 				<button class="menu-button" aria-expanded="false">
 					<span class="sr-only">Menu</span>
-					<icon name="typcn:th-menu" size="1.2em" />
+					<Icon name="typcn:th-menu" size="1.2em" />
 				</button>
 			</template>
 		</menu-button>
@@ -55,7 +55,7 @@ import { navigationLinks, socialLinks } from '../links.ts';
 					socialLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
-							<icon name={icon} size="1.2em" class="social" />
+							<Icon name={icon} size="1.2em" class="social" />
 						</a>
 					))
 				}
@@ -91,7 +91,7 @@ import { navigationLinks, socialLinks } from '../links.ts';
 					socialLinks.map(({ href, icon, label }) => (
 						<a href={href} class="social">
 							<span class="sr-only">{label}</span>
-							<icon name={icon} size="1.1em" class="social" />
+							<Icon name={icon} size="1.1em" class="social" />
 						</a>
 					))
 				}
