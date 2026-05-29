@@ -5,5 +5,7 @@ import icon from "astro-icon";
 export default defineConfig({
 	site: 'https://www.rybanata.art',
 	// base: '/rybanata-portfolio',
+	// site: 'https://bio-port-blo-pages.github.io/rybanata-portfolio',
+	base: '/rybanata-portfolio',
 	integrations: [icon()],
 });
