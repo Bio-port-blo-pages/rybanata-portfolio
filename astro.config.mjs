@@ -16,4 +16,5 @@ export default defineConfig({
 	// 		typcn: ['*'],
 	// 	},
 	// })],
+	integrations: [icon()],
 });
