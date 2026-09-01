@@ -1,8 +1,8 @@
 ---
 destination: 'projects'
-label: 'projects'
-title: 'projects'
-description: 'projects'
+label: 'process'
+title: 'process'
+description: 'process'
 gallery_dir: 'projects/'
 tags:
   - Projekty
